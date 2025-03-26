@@ -27,7 +27,7 @@ const Cart = () => {
       setError(null);
 
       try {
-        const response = await fetch('https://fakestoreapi.com/products');
+        const response = await fetch('http://127.0.0.1:8000/');
         if (!response.ok) {
           throw new Error(`Error fetching data: ${response.status}`);
         }
